@@ -1,0 +1,13 @@
+{% extends 'blogger/base.html' %}
+{% block title %}
+    BLOGGER-DETAILS
+{% endblock  %}
+
+{% block content %}
+    <h1 class="text-center">
+        {{ b.title }}
+    </h1>
+    <p class="text-center">
+        {{ b.details }}
+    </p>
+{% endblock content %}

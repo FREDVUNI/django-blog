@@ -1,0 +1,15 @@
+{% extends 'blogger/base.html' %}
+{% block title %}
+    BLOGGER-HOME
+{% endblock  %}
+
+{% block content %}
+    {% for content in b %}
+        <h1 class="text-center">
+            {{ content.title }}
+        </h1>
+        <span class="text-center">
+            <a href="{% url 'details' content.slug %}">details</a>
+        </span>
+    {% endfor %}
+{% endblock content %}

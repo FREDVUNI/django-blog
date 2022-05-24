@@ -1,0 +1,10 @@
+ {% extends 'blogger/base.html' %}
+ {% block title %}
+        POSTS
+ {% endblock %}
+
+ {% block content %}
+    {% for blog in b %}
+        {{ blog.title }}
+    {% endfor %}
+{% endblock content %}    

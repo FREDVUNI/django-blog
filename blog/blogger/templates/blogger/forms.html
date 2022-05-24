@@ -1,0 +1,11 @@
+{% extends 'blogger/base.html' %}
+{% block title %}
+    Contact Us
+{% endblock %}
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <button type="submit">SEND</button>
+    </form>
+{% endblock content %}
